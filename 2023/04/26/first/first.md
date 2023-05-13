@@ -7,7 +7,7 @@ metaAlignment: center
 coverMeta: out
 coverSize: full
 gallery:
-comments: true
+comment: true
 meta: false
 actions: true
 date: 2023-04-26 14:44:22

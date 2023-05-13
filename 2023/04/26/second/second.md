@@ -7,7 +7,7 @@ metaAlignment: center
 coverImage: img/edg.jpg
 coverMeta: out
 coverSize: full
-comments: true
+comment: true
 toc: true
 meta: false
 actions: false

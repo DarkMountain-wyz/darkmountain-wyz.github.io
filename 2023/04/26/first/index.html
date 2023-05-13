@@ -474,7 +474,7 @@
         
         
           <section class="mdui-card-media">
-            <img src="/images/random/18.png"/>
+            <img src="/images/random/38.png"/>
           </section>
         
         <section class="mdui-typo theme-post__card__content">
@@ -521,11 +521,38 @@
 
         
           
-            <script type="text/javascript">
-              themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
-                return
-              }
-            </script>
+            <section>
+              <div class="mdui-divider"></div>
+            </section>
+            <section class="theme-post__card__comment">
+              
+  <div id="disqus_thread"></div>
+  <script>
+    themeRuntime.commentRest.function = function (newIdentifier, newUrl, newTitle) {
+      DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.identifier = newIdentifier;
+          this.page.url = newUrl;
+          this.page.title = newTitle;
+        }
+      });
+    }
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/2023/04/26/first/';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 'http://localhost:4000/2023/04/26/first/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//blog-m11lrbvczx.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+            </section>
           
         
       </article>
